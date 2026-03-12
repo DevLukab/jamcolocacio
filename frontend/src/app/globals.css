@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@theme inline {
+  --font-sans: var(--font-manrope);
+}
+
+:root {
+  --color-obsidian: #090806;
+  --color-charcoal: #14110f;
+  --color-panel: rgba(255, 255, 255, 0.06);
+  --color-panel-strong: rgba(255, 255, 255, 0.1);
+  --color-border: rgba(199, 154, 98, 0.22);
+  --color-gold: #c58c48;
+  --color-copper: #9f5a31;
+  --color-ivory: #f4ece2;
+  --color-mist: rgba(244, 236, 226, 0.72);
+}
+
+@layer base {
+  * {
+    @apply border-transparent;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply min-h-screen font-sans;
+    background-color: var(--color-obsidian);
+    color: var(--color-ivory);
+  }
+
+  a {
+    @apply transition-colors duration-300;
+  }
+
+  ::selection {
+    background: rgba(197, 140, 72, 0.35);
+    color: #fff8ee;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-cormorant), serif;
+  }
+
+  .luxury-shell {
+    @apply mx-auto w-full max-w-7xl px-6 sm:px-8 lg:px-12;
+  }
+
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.35em] text-[var(--color-gold)];
+  }
+
+  .panel {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.04));
+    border: 1px solid var(--color-border);
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+  }
+
+  .gold-ring {
+    box-shadow: 0 0 0 1px rgba(197, 140, 72, 0.22), inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+  }
+
+  .hero-grid {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+}
