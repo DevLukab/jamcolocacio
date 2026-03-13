@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BookingInquiryForm } from "@/components/booking-inquiry-form";
+import { BookingInquiryForm } from "@/components/forms/booking-inquiry-form";
 
 export default function BookNowPage() {
   return (

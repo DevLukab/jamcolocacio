@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { detailedProcess } from "@/lib/site-data";
+import { detailedProcess } from "@/content/site-data";
 
 export default function ProcessPage() {
   return (

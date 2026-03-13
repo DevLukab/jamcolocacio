@@ -1,4 +1,4 @@
-import { GalleryShowcase } from "@/components/gallery-showcase";
+import { GalleryShowcase } from "@/components/gallery/gallery-showcase";
 
 export default function GalleryPage() {
   return (

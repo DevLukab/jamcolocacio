@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { styleProfiles } from "@/lib/site-data";
+import { styleProfiles } from "@/content/site-data";
 
 export default function KitchenStylesPage() {
   return (

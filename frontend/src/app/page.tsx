@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { kitchenStyles, processSteps, testimonials, trustPillars } from "@/lib/site-data";
+import { kitchenStyles, processSteps, testimonials, trustPillars } from "@/content/site-data";
 
 export default function HomePage() {
   return (
