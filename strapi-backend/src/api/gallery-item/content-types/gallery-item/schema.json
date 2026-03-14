@@ -31,7 +31,8 @@
       "inversedBy": "gallery_items"
     },
     "order": {
-      "type": "integer"
+      "type": "integer",
+      "unique": true
     },
     "featured": {
       "type": "boolean"

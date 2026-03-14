@@ -21,7 +21,8 @@
       "targetField": "name"
     },
     "order": {
-      "type": "integer"
+      "type": "integer",
+      "unique": true
     },
     "gallery_items": {
       "type": "relation",

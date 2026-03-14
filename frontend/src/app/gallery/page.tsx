@@ -1,6 +1,9 @@
 import { GalleryShowcase } from "@/components/gallery/gallery-showcase";
+import { getGalleryData } from "@/lib/gallery";
 
-export default function GalleryPage() {
+export default async function GalleryPage() {
+  const galleryData = await getGalleryData();
+
   return (
     <div className="pb-20 pt-32 sm:pt-36">
       <section className="luxury-shell rounded-[2.5rem] border border-white/10 bg-[radial-gradient(circle_at_top,_rgba(197,140,72,0.15),_transparent_28%),linear-gradient(180deg,_rgba(255,255,255,0.08),_rgba(255,255,255,0.03))] px-8 py-14 hero-grid sm:px-12">
@@ -16,7 +19,7 @@ export default function GalleryPage() {
       </section>
 
       <section className="luxury-shell mt-14">
-        <GalleryShowcase />
+        <GalleryShowcase tags={galleryData.tags} items={galleryData.items} />
       </section>
     </div>
   );

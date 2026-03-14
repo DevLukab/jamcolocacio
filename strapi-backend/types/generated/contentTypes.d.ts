@@ -457,7 +457,7 @@ export interface ApiGalleryItemGalleryItem extends Struct.CollectionTypeSchema {
       'api::gallery-item.gallery-item'
     > &
       Schema.Attribute.Private;
-    order: Schema.Attribute.Integer;
+    order: Schema.Attribute.Integer & Schema.Attribute.Unique;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'title'>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
@@ -494,7 +494,45 @@ export interface ApiGalleryTagGalleryTag extends Struct.CollectionTypeSchema {
     name: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
-    order: Schema.Attribute.Integer;
+    order: Schema.Attribute.Integer & Schema.Attribute.Unique;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.UID<'name'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiKitchenStyleKitchenStyle
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'kitchen_styles';
+  info: {
+    displayName: 'kitchen-style';
+    pluralName: 'kitchen-styles';
+    singularName: 'kitchen-style';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'> &
+      Schema.Attribute.Required;
+    label: Schema.Attribute.Component<'shared.bullet-item', true> &
+      Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::kitchen-style.kitchen-style'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
+    order: Schema.Attribute.Integer & Schema.Attribute.Unique;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'name'>;
     updatedAt: Schema.Attribute.DateTime;
@@ -1016,6 +1054,7 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::gallery-item.gallery-item': ApiGalleryItemGalleryItem;
       'api::gallery-tag.gallery-tag': ApiGalleryTagGalleryTag;
+      'api::kitchen-style.kitchen-style': ApiKitchenStyleKitchenStyle;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

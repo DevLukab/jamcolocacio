@@ -39,8 +39,8 @@ export default function ProcessPage() {
           <p className="mt-4 max-w-2xl text-base leading-8 text-[var(--color-mist)]">
             Tanto si ya tienes planos de cocina como si solo cuentas con un moodboard y medidas del espacio, podemos asesorarte sobre secuencias, viabilidad y el formato de consulta adecuado.
           </p>
-          <Link href="/book-now" className="mt-8 inline-flex rounded-full border border-[var(--color-border)] bg-[linear-gradient(135deg,_rgba(197,140,72,0.95),_rgba(159,90,49,0.95))] px-6 py-4 text-xs font-semibold uppercase tracking-[0.24em] text-black">
-            Reservar una Consulta
+          <Link href="/contact" className="mt-8 inline-flex rounded-full border border-[var(--color-border)] bg-[linear-gradient(135deg,_rgba(197,140,72,0.95),_rgba(159,90,49,0.95))] px-6 py-4 text-xs font-semibold uppercase tracking-[0.24em] text-black">
+            Solicitar una Consulta
           </Link>
         </div>
       </section>

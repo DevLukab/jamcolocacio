@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_shared_bullet_items",
+  "info": {
+    "displayName": "bullet-item",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {},
+  "config": {}
+}

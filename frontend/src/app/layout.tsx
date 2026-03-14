@@ -16,9 +16,9 @@ const displayFont = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "JAMCOLOCACIO | Instalacion y Reformas de Cocina",
+  title: "JAMCocinas | Instalacion y Reformas de Cocina",
   description:
-    "JAMCOLOCACIO desarrolla instalaciones y reformas de cocina bien resueltas, desde la planificacion inicial hasta la entrega final.",
+    "JAMCocinas desarrolla instalaciones y reformas de cocina bien resueltas, desde la planificacion inicial hasta la entrega final.",
 };
 
 export default function RootLayout({

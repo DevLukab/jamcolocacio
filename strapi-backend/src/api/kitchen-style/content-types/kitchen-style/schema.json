@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "kitchen_styles",
+  "info": {
+    "singularName": "kitchen-style",
+    "pluralName": "kitchen-styles",
+    "displayName": "kitchen-style"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "order": {
+      "type": "integer",
+      "unique": true
+    },
+    "label": {
+      "type": "component",
+      "component": "shared.bullet-item",
+      "repeatable": true,
+      "required": true
+    }
+  }
+}

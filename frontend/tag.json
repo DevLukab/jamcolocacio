@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "id": 2,
+            "documentId": "rhs31z4forug3m39whywjo30",
+            "name": "moderno",
+            "slug": null,
+            "order": null,
+            "createdAt": "2026-03-13T11:00:57.394Z",
+            "updatedAt": "2026-03-13T11:00:59.866Z",
+            "publishedAt": "2026-03-13T11:00:59.871Z"
+        }
+    ],
+    "meta": {
+        "pagination": {
+            "page": 1,
+            "pageSize": 25,
+            "pageCount": 1,
+            "total": 1
+        }
+    }
+}

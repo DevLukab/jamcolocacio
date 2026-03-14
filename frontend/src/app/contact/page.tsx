@@ -12,6 +12,20 @@ export default function ContactPage() {
         <p className="text-base leading-8 text-[var(--color-mist)] sm:text-lg">
           Comparte tu plazo, tus ideas de distribucion y el nivel de acabado deseado. Te recomendaremos el siguiente paso y el formato de consulta adecuado.
         </p>
+        <div className="flex flex-col gap-4 pt-3 sm:flex-row">
+          <a
+            href={`tel:${contactDetails.phone.replace(/\s+/g, "")}`}
+            className="inline-flex items-center justify-center rounded-full border border-[var(--color-border)] bg-[linear-gradient(135deg,_rgba(197,140,72,0.95),_rgba(159,90,49,0.95))] px-6 py-4 text-xs font-semibold uppercase tracking-[0.24em] text-black"
+          >
+            Llamar ahora
+          </a>
+          <a
+            href={`mailto:${contactDetails.email}`}
+            className="inline-flex items-center justify-center rounded-full border border-white/15 px-6 py-4 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-ivory)] hover:border-[var(--color-border)] hover:bg-white/5"
+          >
+            Escribir por email
+          </a>
+        </div>
       </section>
 
       <section className="luxury-shell mt-16 grid items-start gap-6 lg:grid-cols-[0.78fr_1.22fr]">

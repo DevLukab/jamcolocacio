@@ -3,18 +3,23 @@
 import Image from "next/image";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { useMemo, useState } from "react";
-import { galleryItems, galleryTags } from "@/content/site-data";
+import type { GalleryItem } from "@/lib/gallery";
 
-export function GalleryShowcase() {
+type GalleryShowcaseProps = {
+  tags: string[];
+  items: GalleryItem[];
+};
+
+export function GalleryShowcase({ tags, items }: GalleryShowcaseProps) {
   const [activeTag, setActiveTag] = useState("Todas");
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const visibleItems = useMemo(
     () =>
       activeTag === "Todas"
-        ? galleryItems
-        : galleryItems.filter((item) => item.tag === activeTag),
-    [activeTag],
+        ? items
+        : items.filter((item) => item.tag === activeTag),
+    [activeTag, items],
   );
 
   const activeItem = activeIndex === null ? null : visibleItems[activeIndex];
@@ -22,7 +27,7 @@ export function GalleryShowcase() {
   return (
     <>
       <div className="flex flex-wrap gap-3">
-        {galleryTags.map((tag) => (
+        {tags.map((tag) => (
           <button
             key={tag}
             type="button"
@@ -52,8 +57,9 @@ export function GalleryShowcase() {
             <div className={`relative ${item.height}`}>
               <Image
                 src={item.image}
-                alt={item.title}
+                alt={item.alt}
                 fill
+                unoptimized
                 className="object-cover transition duration-500 group-hover:scale-105 group-hover:brightness-75"
                 sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
               />
@@ -89,7 +95,7 @@ export function GalleryShowcase() {
           </button>
           <div className="w-full max-w-5xl overflow-hidden rounded-[2rem] border border-[var(--color-border)] bg-[#120f0c]">
             <div className="relative h-[70vh] min-h-[24rem]">
-              <Image src={activeItem.image} alt={activeItem.title} fill className="object-cover" sizes="100vw" />
+              <Image src={activeItem.image} alt={activeItem.alt} fill unoptimized className="object-cover" sizes="100vw" />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
                 <p className="eyebrow">{activeItem.tag}</p>

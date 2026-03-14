@@ -28,10 +28,10 @@ export default function HomePage() {
                 <ArrowRight className="size-4" />
               </Link>
               <Link
-                href="/book-now"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-full border border-white/15 px-6 py-4 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-ivory)] hover:border-[var(--color-border)] hover:bg-white/5"
               >
-                Reservar una Consulta
+                Solicitar una Consulta
               </Link>
             </div>
           </div>
@@ -131,8 +131,8 @@ export default function HomePage() {
             <Link href="/contact" className="inline-flex items-center justify-center rounded-full border border-[var(--color-border)] bg-black px-6 py-4 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-ivory)] hover:bg-black/80">
               Contactar
             </Link>
-            <Link href="/book-now" className="inline-flex items-center justify-center rounded-full border border-black/10 bg-[var(--color-ivory)] px-6 py-4 text-xs font-semibold uppercase tracking-[0.24em] text-black hover:bg-[#e9dac7]">
-              Reservar Consulta
+            <Link href="/contact" className="inline-flex items-center justify-center rounded-full border border-black/10 bg-[var(--color-ivory)] px-6 py-4 text-xs font-semibold uppercase tracking-[0.24em] text-black hover:bg-[#e9dac7]">
+              Solicitar Consulta
             </Link>
           </div>
         </div>

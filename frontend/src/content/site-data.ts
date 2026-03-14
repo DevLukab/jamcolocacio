@@ -3,7 +3,6 @@ export const navigationLinks = [
   { href: "/process", label: "Nuestro Proceso" },
   { href: "/kitchen-styles", label: "Estilos de Cocina" },
   { href: "/gallery", label: "Galeria" },
-  { href: "/contact", label: "Contacto" },
 ];
 
 export const trustPillars = [

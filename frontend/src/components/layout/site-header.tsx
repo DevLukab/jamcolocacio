@@ -33,7 +33,7 @@ export function SiteHeader() {
           </span>
           <div>
             <div className="font-display text-2xl leading-none tracking-[0.18em] text-[var(--color-ivory)] uppercase">
-              JAMCOLOCACIO
+              JAMCocinas
             </div>
             <div className="text-[10px] uppercase tracking-[0.38em] text-[var(--color-mist)]">
               Instalacion de Cocinas
@@ -55,10 +55,10 @@ export function SiteHeader() {
             );
           })}
           <Link
-            href="/book-now"
+            href="/contact"
             className="rounded-full border border-[var(--color-border)] bg-[linear-gradient(135deg,_rgba(197,140,72,0.95),_rgba(159,90,49,0.95))] px-5 py-3 text-xs font-semibold uppercase tracking-[0.22em] text-black transition-transform hover:-translate-y-0.5"
           >
-            Reservar Consulta
+            Solicitar Consulta
           </Link>
         </nav>
 
@@ -86,11 +86,11 @@ export function SiteHeader() {
               </Link>
             ))}
             <Link
-              href="/book-now"
+              href="/contact"
               onClick={() => setOpen(false)}
               className="mt-2 rounded-full border border-[var(--color-border)] bg-[linear-gradient(135deg,_rgba(197,140,72,0.95),_rgba(159,90,49,0.95))] px-5 py-3 text-center text-xs font-semibold uppercase tracking-[0.22em] text-black"
             >
-              Reservar Consulta
+              Solicitar Consulta
             </Link>
           </nav>
         </div>
