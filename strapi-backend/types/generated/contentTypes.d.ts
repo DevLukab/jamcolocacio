@@ -430,6 +430,34 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiContactDetailContactDetail
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'contact_details';
+  info: {
+    displayName: 'contact-detail';
+    pluralName: 'contact-details';
+    singularName: 'contact-detail';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact-detail.contact-detail'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiGalleryItemGalleryItem extends Struct.CollectionTypeSchema {
   collectionName: 'gallery_items';
   info: {
@@ -1052,6 +1080,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::contact-detail.contact-detail': ApiContactDetailContactDetail;
       'api::gallery-item.gallery-item': ApiGalleryItemGalleryItem;
       'api::gallery-tag.gallery-tag': ApiGalleryTagGalleryTag;
       'api::kitchen-style.kitchen-style': ApiKitchenStyleKitchenStyle;

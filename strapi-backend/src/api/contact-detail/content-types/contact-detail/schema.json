@@ -1,0 +1,14 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_details",
+  "info": {
+    "singularName": "contact-detail",
+    "pluralName": "contact-details",
+    "displayName": "contact-detail"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {}
+}
