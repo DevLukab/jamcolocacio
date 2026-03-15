@@ -22,8 +22,8 @@ export function BookingInquiryForm({
         {[
           { label: "Nombre", type: "text", placeholder: "Tu nombre completo" },
           { label: "Email", type: "email", placeholder: "tu@correo.com" },
-          { label: "Telefono", type: "tel", placeholder: "+34 ..." },
-          { label: "Poblacion o zona", type: "text", placeholder: "Ciudad o area del proyecto" },
+          { label: "Teléfono", type: "tel", placeholder: "+34 ..." },
+          { label: "Población o zona", type: "text", placeholder: "Ciudad o área del proyecto" },
         ].map((field) => (
           <label
             key={field.label}
@@ -38,12 +38,12 @@ export function BookingInquiryForm({
           Tipo de proyecto
           <select className={inputClassName} defaultValue="">
             <option value="" disabled>
-              Selecciona una opcion
+              Selecciona una opción
             </option>
-            <option>Instalacion completa de cocina</option>
-            <option>Renovacion parcial</option>
+            <option>Instalación completa de cocina</option>
+            <option>Renovación parcial</option>
             <option>Isla o zona concreta</option>
-            <option>Coordinacion con interiorista o arquitecto</option>
+            <option>Coordinación con interiorista o arquitecto</option>
           </select>
         </label>
 
@@ -51,7 +51,7 @@ export function BookingInquiryForm({
           Rango de presupuesto
           <select className={inputClassName} defaultValue="">
             <option value="" disabled>
-              Selecciona una opcion
+              Selecciona una opción
             </option>
             <option>Menos de 25k EUR</option>
             <option>25k EUR - 45k EUR</option>
@@ -84,7 +84,7 @@ export function BookingInquiryForm({
           Accesos o condicionantes de obra
           <textarea
             rows={4}
-            placeholder="Indica si hay ascensor pequeno, horarios de comunidad, vivienda ocupada u otras limitaciones."
+            placeholder="Indica si hay ascensor pequeño, horarios de comunidad, vivienda ocupada u otras limitaciones."
             className={inputClassName}
           />
         </label>
@@ -93,7 +93,7 @@ export function BookingInquiryForm({
           Detalles del proyecto
           <textarea
             rows={5}
-            placeholder="Cuentanos el alcance del proyecto y cualquier necesidad importante para preparar la consulta."
+            placeholder="Cuéntanos el alcance del proyecto y cualquier necesidad importante para preparar la consulta."
             className={inputClassName}
           />
         </label>

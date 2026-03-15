@@ -59,7 +59,7 @@ function toAbsoluteImageUrl(url: string) {
 
 function formatTagName(tagName: string) {
   if (!tagName) {
-    return "Sin categoria";
+    return "Sin categoría";
   }
 
   return tagName.charAt(0).toUpperCase() + tagName.slice(1);
@@ -90,7 +90,7 @@ export async function getGalleryData(): Promise<GalleryData> {
             "",
         ),
         alt: item.image?.alternativeText || item.title,
-        tag: formatTagName(item.gallery_tag?.name || "Sin categoria"),
+        tag: formatTagName(item.gallery_tag?.name || "Sin categoría"),
         height: masonryHeights[index % masonryHeights.length],
       }));
 

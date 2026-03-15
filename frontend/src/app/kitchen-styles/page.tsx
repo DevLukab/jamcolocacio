@@ -9,14 +9,14 @@ export default function KitchenStylesPage() {
         <div className="max-w-3xl space-y-4">
           <p className="eyebrow">Estilos de cocina</p>
           <h1 className="font-display text-6xl leading-[0.95] text-[var(--color-ivory)] sm:text-7xl">
-            Encuentra tu inspiracion.
+            Encuentra tu inspiración.
           </h1>
           <p className="text-base leading-8 text-[var(--color-mist)] sm:text-lg">
-            Trabajamos cocinas con identidades muy distintas, adaptando materiales, distribucion y detalles de ejecucion a cada tipo de vivienda y cliente.
+            Trabajamos cocinas con identidades muy distintas, adaptando materiales, distribución y detalles de ejecución a cada tipo de vivienda y cliente.
           </p>
         </div>
         <Link href="/gallery" className="text-sm uppercase tracking-[0.24em] text-[var(--color-gold)] hover:text-[var(--color-ivory)]">
-          Ver galeria completa
+          Ver galería completa
         </Link>
       </section>
 
@@ -47,8 +47,8 @@ export default function KitchenStylesPage() {
         <div className="grid gap-6 rounded-[2rem] border border-white/10 bg-black/25 p-6 lg:grid-cols-3">
           {[
             "Selecciones guiadas por el material: piedra, madera, lacado y metal",
-            "Planificacion de instalacion adaptada a propiedades singulares, apartamentos y viviendas familiares",
-            "Ubicacion de iluminacion y electrodomesticos resuelta antes del inicio de obra",
+            "Planificación de instalación adaptada a propiedades singulares, apartamentos y viviendas familiares",
+            "Ubicación de iluminación y electrodomésticos resuelta antes del inicio de obra",
           ].map((item) => (
             <div key={item} className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6 text-sm leading-7 text-[var(--color-mist)]">
               {item}

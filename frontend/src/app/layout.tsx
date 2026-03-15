@@ -6,19 +6,19 @@ import "./globals.css";
 
 const bodyFont = Manrope({
   variable: "--font-manrope",
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
 });
 
 const displayFont = Cormorant_Garamond({
   variable: "--font-cormorant",
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "JAMCocinas | Instalacion y Reformas de Cocina",
+  title: "COCINASJAM | Instalación y Reformas de Cocina",
   description:
-    "JAMCocinas desarrolla instalaciones y reformas de cocina bien resueltas, desde la planificacion inicial hasta la entrega final.",
+    "COCINASJAM desarrolla instalaciones y reformas de cocina bien resueltas, desde la planificación inicial hasta la entrega final.",
 };
 
 export default function RootLayout({

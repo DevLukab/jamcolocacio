@@ -10,10 +10,10 @@ export default async function GalleryPage() {
         <div className="max-w-3xl space-y-4">
           <p className="eyebrow">Nuestro portafolio</p>
           <h1 className="font-display text-6xl leading-[0.95] text-[var(--color-ivory)] sm:text-7xl">
-            Una galeria de cocinas definidas por el acabado, la luz y la proporcion.
+            Una galería de cocinas definidas por el acabado, la luz y la proporción.
           </h1>
           <p className="text-base leading-8 text-[var(--color-mist)] sm:text-lg">
-            Explora trabajos recientes entre instalaciones modernas, clasicas, centradas en islas o en iluminacion. Filtra por estilo y abre cualquier proyecto en el visor para verlo de cerca.
+            Explora trabajos recientes entre instalaciones modernas, clásicas, centradas en islas o en iluminación. Filtra por estilo y abre cualquier proyecto en el visor para verlo de cerca.
           </p>
         </div>
       </section>

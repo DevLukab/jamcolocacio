@@ -33,10 +33,10 @@ export function SiteHeader() {
           </span>
           <div>
             <div className="font-display text-2xl leading-none tracking-[0.18em] text-[var(--color-ivory)] uppercase">
-              JAMCocinas
+              COCINASJAM
             </div>
             <div className="text-[10px] uppercase tracking-[0.38em] text-[var(--color-mist)]">
-              Instalacion de Cocinas
+              Instalación de Cocinas
             </div>
           </div>
         </Link>

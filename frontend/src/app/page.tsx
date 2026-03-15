@@ -10,13 +10,13 @@ export default function HomePage() {
         <div className="relative overflow-hidden rounded-[2rem] border border-[var(--color-border)] bg-[linear-gradient(135deg,_rgba(255,255,255,0.09),_rgba(255,255,255,0.03))] px-7 py-12 shadow-[0_40px_120px_rgba(0,0,0,0.35)] sm:px-10 sm:py-14 lg:min-h-[40rem] lg:rounded-[2.5rem]">
           <div className="hero-grid absolute inset-0 opacity-25" />
           <div className="relative max-w-2xl space-y-8">
-            <p className="eyebrow">Instalacion y reforma de cocinas</p>
+            <p className="eyebrow">Instalación y reforma de cocinas</p>
             <div className="space-y-5">
               <h1 className="font-display text-6xl leading-[0.95] text-[var(--color-ivory)] sm:text-7xl lg:text-8xl">
-                Cocinas bien pensadas, ejecutadas con precision.
+                Cocinas bien pensadas, ejecutadas con precisión.
               </h1>
               <p className="max-w-xl text-base leading-8 text-[var(--color-mist)] sm:text-lg">
-                Desarrollamos proyectos de cocina con criterio tecnico, coordinacion de materiales y una ejecucion cuidada desde la primera conversacion hasta la entrega.
+                Desarrollamos proyectos de cocina con criterio técnico, coordinación de materiales y una ejecución cuidada desde la primera conversación hasta la entrega.
               </p>
             </div>
             <div className="flex flex-col gap-4 sm:flex-row">
@@ -31,7 +31,7 @@ export default function HomePage() {
                 href="/contact"
                 className="inline-flex items-center justify-center rounded-full border border-white/15 px-6 py-4 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-ivory)] hover:border-[var(--color-border)] hover:bg-white/5"
               >
-                Solicitar una Consulta
+                Solicitar una consulta
               </Link>
             </div>
           </div>
@@ -50,7 +50,7 @@ export default function HomePage() {
             <div className="absolute inset-0 bg-[linear-gradient(180deg,_rgba(10,9,8,0.05)_0%,_rgba(10,9,8,0.22)_40%,_rgba(10,9,8,0.85)_100%)]" />
             <div className="absolute inset-x-0 bottom-0 p-7 sm:p-8">
               <p className="eyebrow">Acabado distintivo</p>
-              <p className="font-display text-4xl text-[var(--color-ivory)]">Piedra, carpinteria e iluminacion resueltas como una sola composicion.</p>
+              <p className="font-display text-4xl text-[var(--color-ivory)]">Piedra, carpintería e iluminación resueltas como una sola composición.</p>
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@ export default function HomePage() {
         <div className="mb-10 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div className="space-y-3">
             <p className="eyebrow">Estilos destacados</p>
-            <h2 className="font-display text-5xl text-[var(--color-ivory)] sm:text-6xl">Distintas formas de entender una cocina, resueltas con precision.</h2>
+            <h2 className="font-display text-5xl text-[var(--color-ivory)] sm:text-6xl">Distintas formas de entender una cocina, resueltas con precisión.</h2>
           </div>
           <Link href="/kitchen-styles" className="text-sm uppercase tracking-[0.22em] text-[var(--color-gold)] hover:text-[var(--color-ivory)]">
             Explorar estilos de cocina
@@ -81,11 +81,12 @@ export default function HomePage() {
             <article key={style.name} className="group relative overflow-hidden rounded-[2rem] border border-white/10">
               <div className="relative h-[28rem]">
                 <Image src={style.image} alt={style.name} fill className="object-cover transition duration-500 group-hover:scale-105 group-hover:brightness-50" sizes="(max-width: 1024px) 100vw, 33vw" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent" />
-                <div className="absolute inset-x-0 bottom-0 space-y-3 p-6">
-                  <p className="text-[10px] font-semibold uppercase tracking-[0.35em] text-[var(--color-gold)]">{style.accent}</p>
-                  <h3 className="font-display text-4xl text-[var(--color-ivory)]">{style.name}</h3>
-                  <p className="text-sm leading-7 text-[var(--color-mist)]">{style.description}</p>
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,_rgba(0,0,0,0.04)_0%,_rgba(0,0,0,0.18)_38%,_rgba(0,0,0,0.86)_100%)]" />
+                <div className="absolute inset-x-0 bottom-0 p-6">
+                  <div className="rounded-[1.5rem] bg-black/35 p-5 backdrop-blur-[2px]">
+                    <h3 className="font-display text-4xl text-[var(--color-ivory)]">{style.name}</h3>
+                    <p className="mt-3 text-base leading-8 text-[rgba(244,238,230,0.9)]">{style.description}</p>
+                  </div>
                 </div>
               </div>
             </article>
@@ -123,16 +124,16 @@ export default function HomePage() {
       <section className="luxury-shell mt-24">
         <div className="overflow-hidden rounded-[2.5rem] border border-[var(--color-border)] bg-[linear-gradient(135deg,_rgba(197,140,72,0.18),_rgba(255,255,255,0.04),_rgba(159,90,49,0.16))] px-8 py-12 text-center sm:px-12 sm:py-16">
           <p className="eyebrow">Empieza tu proyecto</p>
-          <h2 className="mt-4 font-display text-5xl text-[var(--color-ivory)] sm:text-6xl">Listo para dar forma a tu proxima cocina?</h2>
+          <h2 className="mt-4 font-display text-5xl text-[var(--color-ivory)] sm:text-6xl">¿Listo para dar forma a tu próxima cocina?</h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-[var(--color-mist)]">
-            Comparte tus planos, dimensiones y necesidades del espacio. Definiremos contigo el alcance, la planificacion y la mejor forma de abordar el proyecto.
+            Comparte tus planos, dimensiones y necesidades del espacio. Definiremos contigo el alcance, la planificación y la mejor forma de abordar el proyecto.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-            <Link href="/contact" className="inline-flex items-center justify-center rounded-full border border-[var(--color-border)] bg-black px-6 py-4 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-ivory)] hover:bg-black/80">
-              Contactar
+            <Link href="/gallery" className="inline-flex items-center justify-center rounded-full border border-[var(--color-border)] bg-black px-6 py-4 text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-ivory)] hover:bg-black/80">
+              Ver proyectos
             </Link>
             <Link href="/contact" className="inline-flex items-center justify-center rounded-full border border-black/10 bg-[var(--color-ivory)] px-6 py-4 text-xs font-semibold uppercase tracking-[0.24em] text-black hover:bg-[#e9dac7]">
-              Solicitar Consulta
+              Solicitar consulta
             </Link>
           </div>
         </div>
